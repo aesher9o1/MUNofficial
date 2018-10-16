@@ -39,6 +39,8 @@ testem.log
 Thumbs.db
 
 #environment
-src/environments/environment.ts
-/src/environments/environment.ts
-/src/environments/*
+/src/environments
+
+
+#database rule
+database.rules.json
