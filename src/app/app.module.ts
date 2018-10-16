@@ -14,6 +14,9 @@ import { LandingNewsComponent } from './components/landing-news/landing-news.com
 import { LandingContainerComponent } from './components/landing-container/landing-container.component';
 import { AppRoutingModule, routingComponents } from './app-routing/app-routing.module';
 import {MatCardModule} from '@angular/material/card';
+import { LandingMunComponent } from './components/landing-mun/landing-mun.component';
+import { LandingToolkitComponent } from './components/landing-toolkit/landing-toolkit.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import {MatCardModule} from '@angular/material/card';
     LandingComponent,
     LandingNewsComponent,
     LandingContainerComponent,
-    routingComponents
+    routingComponents,
+    LandingMunComponent,
+    LandingToolkitComponent,
+    FooterComponent
   ],
   imports: [
     MatCardModule,

@@ -1,0 +1,15 @@
+h3{
+    margin-top: 10px;
+    font-size: 23px;
+    font-family: 'SFRegular' Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: black;
+    float: right;
+    margin-left: 0.7em
+  }
+  .mat-card{
+    float: left;
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 9px;
+}

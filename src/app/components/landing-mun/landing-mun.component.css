@@ -1,0 +1,17 @@
+.black{
+    background: #000000;
+    height: 40vh;
+    z-index: -2;
+    overflow-x: hidden!important;
+}
+.mat-card{
+    border-radius: 9px;
+}
+
+
+
+@media (max-width: 576px) {
+   img{
+       width: 300px!important;
+   }
+  }
