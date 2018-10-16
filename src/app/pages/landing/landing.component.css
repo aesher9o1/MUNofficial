@@ -1,0 +1,46 @@
+.mat-toolbar{
+    background: white;
+    padding: 0;
+    margin: 0;
+    height: 66px;   
+}
+
+
+.title-center {
+  margin-top: 10px;
+    flex: 1 1 auto;
+   text-align: center
+  }
+h2{
+  margin-top: 10px;
+  font-size: 27px;
+  font-family: 'SFBold' Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: black;
+  float: right;
+  margin-right: 3em;
+}
+
+.row{
+  width: 100vw;
+  border-bottom: 1px solid #d6d6d6;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: center
+
+}
+
+
+
+@media (max-width: 576px) {
+  .row{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media(max-width: 382px){
+.logo{
+  display: none;
+}
+}

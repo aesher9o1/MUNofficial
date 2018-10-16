@@ -9,12 +9,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
+import { LandingComponent } from './pages/landing/landing.component';
+import { LandingNewsComponent } from './components/landing-news/landing-news.component';
+import { LandingContainerComponent } from './components/landing-container/landing-container.component';
+import { AppRoutingModule , routingComponents} from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent,
+    LandingNewsComponent,
+    LandingContainerComponent,
+    routingComponents
   ],
   imports: [
+    AppRoutingModule,
     MatIconModule,
     HttpClientModule,
     AngularSvgIconModule,
