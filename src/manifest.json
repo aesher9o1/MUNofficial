@@ -1,8 +1,8 @@
 {
-  "name": "MUNofficial",
-  "short_name": "MUNofficial",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "MUJMUN",
+  "short_name": "MUJMUN",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
