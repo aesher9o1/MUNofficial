@@ -1,0 +1,23 @@
+
+h3{
+    margin-top: 10px;
+    font-size: 23px;
+    font-family: 'SFRegular' Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: black;
+    float: right;
+    margin-right: 3em;
+  }
+
+  .subtitle{
+    font-size: 12px;
+    font-family: 'SFRegular' Arial, Helvetica, sans-serif;
+    color: #818080;
+  }
+
+  .main{
+    font-size: 20px;
+    font-family: 'SFBold' Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: black
+  }

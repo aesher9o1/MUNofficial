@@ -29,3 +29,16 @@ html body{
     font-family: 'SFUltralight';
        src: url('./assets/fonts/SFUltralight.ttf') format('truetype');
 }
+
+
+.top-image{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.mat-card{
+    float: left;
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 9px;
+}

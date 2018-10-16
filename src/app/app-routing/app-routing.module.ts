@@ -9,11 +9,11 @@ import { LandingContainerComponent } from './../components/landing-container/lan
 
 const routes: Routes = [
   {
-      path: '',
-      component: LandingContainerComponent,
-      // children:[
-      //   { path: '', component: LandingContainerComponent }
-      // ]
+    path: '',
+    component: LandingContainerComponent,
+    // children:[
+    //   { path: '', component: LandingContainerComponent }
+    // ]
   },
 ];
 

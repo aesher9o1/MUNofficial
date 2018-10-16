@@ -29,6 +29,13 @@ h2{
   text-align: center
 
 }
+.logo{
+  text-align: center;
+}
+.text{
+  text-align: center;
+  
+}
 
 
 
@@ -37,10 +44,8 @@ h2{
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
+  .empty{
+    display: none
+  }
 }
 
-@media(max-width: 382px){
-.logo{
-  display: none;
-}
-}
