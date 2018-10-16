@@ -1,28 +1,41 @@
 .mat-toolbar{
-    background: rgba(0,0,0,0.8);
+    background: white;
     padding: 0;
     margin: 0;
     height: 55px;
     font-size: 17px;
     font-family: 'SFRegular' Arial, Helvetica, sans-serif;
+    text-align: right
 }
 
 
 .title-center {
   margin-top: 10px;
     flex: 1 1 auto;
-    text-align: center;
    
-   
+  
+   text-align: center
   }
 h2{
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 27px;
   font-family: 'SFBold' Arial, Helvetica, sans-serif;
-  font-weight: 500
+  font-weight: 700;
+  color: black;
+  float: right;
+  margin-right: 3em;
 }
-.name{
+
+.row{
+  width: 100vw;
   border-bottom: 1px solid #d6d6d6;
+  
   margin-left: 3em;
   margin-right: 3em;
+  text-align: center
+
+}
+.col{
+  vertical-align: middle
 }
 
