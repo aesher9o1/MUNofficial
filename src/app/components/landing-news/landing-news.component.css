@@ -1,4 +1,9 @@
-
+.mat-card{
+    float: left;
+    width: 100%;
+    margin-bottom: 2em;
+    border-radius: 9px;
+}
 h3{
     margin-top: 10px;
     font-size: 23px;
@@ -6,7 +11,7 @@ h3{
     font-weight: 700;
     color: black;
     float: right;
-    margin-right: 3em;
+    margin-left: 0.7em
   }
 
   .subtitle{
