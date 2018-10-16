@@ -36,3 +36,8 @@ html body{
     border-top-right-radius: 9px;
 }
 
+.toolbar{
+    position: fixed;
+    transition: top 0.3s;
+    z-index: 2;
+}
