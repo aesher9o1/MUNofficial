@@ -24,5 +24,9 @@ li:hover , :active{
     margin-right: 1em;
 }
 
-
-
+.mat-card:active{
+    background:    rgb(25, 25, 25)
+}
+ul:active{
+    background: none;
+}

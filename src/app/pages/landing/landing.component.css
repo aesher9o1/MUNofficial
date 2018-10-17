@@ -47,7 +47,8 @@ h2{
     display: none
   }
   .text{
-    text-align: left
+    text-align: left;
+    margin-left: -1em;
   }
   .logo{
     text-align: right
