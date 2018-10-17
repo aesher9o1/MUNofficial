@@ -13,3 +13,26 @@ h3{
     margin-bottom: 2em;
     border-radius: 9px;
 }
+
+.toolkit-card{
+     -webkit-transition: all 250ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 250ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 250ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 250ms ease-in;
+    transform: scale(1);   
+
+}
+
+.toolkit-card:hover{
+    -webkit-transition: all 250ms ease-in;
+    -webkit-transform: scale(0.95);
+    -ms-transition: all 250ms ease-in;
+    -ms-transform: scale(0.95);   
+    -moz-transition: all 250ms ease-in;
+    -moz-transform: scale(0.95);
+    transition: all 250ms ease-in;
+    transform: scale(0.95);
+}

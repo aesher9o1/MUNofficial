@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
 import { LandingMunComponent } from './components/landing-mun/landing-mun.component';
 import { LandingToolkitComponent } from './components/landing-toolkit/landing-toolkit.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { FooterComponent } from './pages/footer/footer.component';
     AngularSvgIconModule,
     MatToolbarModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
