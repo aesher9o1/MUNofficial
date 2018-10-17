@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatBottomSheet, MatBottomSheetRef} from '@angular/material';
+import { OptionsComponent } from './../../extras/options/options.component'
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private bottomSheet: MatBottomSheet) {
+   
+  }
+
+  openBottomSheet(): void {
+    this.bottomSheet.open(OptionsComponent);
+    
+  }
 
   ngOnInit() {
   }
 
 }
+
+

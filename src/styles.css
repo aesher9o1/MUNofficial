@@ -56,3 +56,8 @@ html body{
     font-weight: 700;
     color: #fafafa
   }
+  .mat-bottom-sheet-container{
+      padding: 0!important;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+  }

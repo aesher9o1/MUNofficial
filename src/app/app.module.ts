@@ -18,7 +18,8 @@ import { LandingMunComponent } from './components/landing-mun/landing-mun.compon
 import { LandingToolkitComponent } from './components/landing-toolkit/landing-toolkit.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { OptionsComponent } from './extras/options/options.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +29,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     routingComponents,
     LandingMunComponent,
     LandingToolkitComponent,
-    FooterComponent
+    FooterComponent,
+    OptionsComponent
   ],
   imports: [
+
+    MatBottomSheetModule,
     MatCardModule,
     AppRoutingModule,
     MatIconModule,
@@ -43,6 +47,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AngularFireDatabaseModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
+  entryComponents:[ OptionsComponent ],
   providers: [],
   bootstrap: [AppComponent]
 })

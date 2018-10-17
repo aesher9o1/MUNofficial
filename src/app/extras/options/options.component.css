@@ -1,0 +1,28 @@
+.content{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-family: 'SFRegular', Arial, Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+    font-family: 'SFRegular', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 7px;
+    
+}
+li:hover , :active{
+    background: #212121;
+}
+
+
+.mat-icon{
+    float: left;
+    font-size: 25px;
+    margin-right: 1em;
+}
+
+
+
