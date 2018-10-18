@@ -19,7 +19,9 @@ import { LandingToolkitComponent } from './components/landing-toolkit/landing-to
 import { FooterComponent } from './pages/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
-import { OptionsComponent } from './extras/options/options.component'
+import { OptionsComponent } from './extras/options/options.component';
+import { NgsRevealModule } from 'ngx-scrollreveal';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,7 @@ import { OptionsComponent } from './extras/options/options.component'
     OptionsComponent
   ],
   imports: [
-
+    NgsRevealModule,
     MatBottomSheetModule,
     MatCardModule,
     AppRoutingModule,

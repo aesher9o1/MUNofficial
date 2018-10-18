@@ -38,7 +38,7 @@
   <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
     href="/favicon.ico">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="QI">
+  <meta name="apple-mobile-web-app-title" content="Arcadia Archives">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
@@ -51,8 +51,8 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -64,28 +64,22 @@
 
 
 <script>
-    var toolbar =  document.getElementsByClassName("toolbar")[0];
-    var prevScrollpos = window.pageYOffset;
-    toolbar.style.top = "0";
+  var toolbar = document.getElementsByClassName("toolbar")[0];
+  var prevScrollpos = window.pageYOffset;
+  toolbar.style.top = "0";
+
+
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
     
-    
-    window.onscroll = function() {
+    if (prevScrollpos > currentScrollPos)
+      toolbar.style.top = "0";
+    else
+      toolbar.style.top = "-" + toolbar.clientHeight + "px";
 
+    prevScrollpos = currentScrollPos;
+  }
 
+</script>
 
-      
-      var currentScrollPos = window.pageYOffset;
-
-      // if(!currentScrollPos==0){
-          
-      // }
-      if (prevScrollpos > currentScrollPos)      
-        toolbar.style.top = "0";
-      else 
-        toolbar.style.top = "-"+toolbar.clientHeight+"px";
-      
-        prevScrollpos = currentScrollPos;
-    }
-
-    </script>
 </html>
