@@ -1,5 +1,14 @@
-<div class="chatlist">
-  <ul class="list-group">
-    <app-chat-item *ngFor="let msg of messages" [message]="msg"></app-chat-item>
-  </ul>
-</div>
+<mat-card class=" container mat-elevation-z2">
+    <div class="row">
+        <div class="col-md-8 answer">
+            <app-chat-item *ngFor="let msg of messages" [message]="msg"></app-chat-item>
+        </div>
+        <mat-card class="col-md-4 mat-elevation-z1 question">
+            <div class="ques-area">
+                <textarea rows="4" type="text" [(ngModel)]="message.content"></textarea><br>
+                <button mat-stroked-button (click)="sendMessage()">ASK</button>
+            </div>
+        </mat-card>
+    </div>
+
+</mat-card>

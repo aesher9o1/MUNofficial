@@ -1,0 +1,60 @@
+.container{
+    margin-top: 7em;
+    margin-bottom: 2em;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    color: white;
+    padding: 0;
+}
+.answer{
+    overflow-y: auto;
+    padding: 2em;
+    height: 80vh
+}
+.mat-card{
+    overflow-x: hidden!important;
+}
+
+textarea{
+    border:none;
+    border-bottom: 1px solid #313131;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+textarea:focus {
+    outline-width: 0;
+}
+.question{
+   position: relative;
+   display: table;
+   height: 70vh;
+   background: #FFFFFF;
+   margin-top:2em
+}
+button{
+    margin-top:2em
+}
+
+.ques-area{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+    
+  .question{
+      height: 10vh;
+      width: 100%!important;
+      margin: 0
+  }
+  .answer{
+      height: 60vh;
+  }
+
+  .container{
+      margin-top: 3em
+  }
+  
+}

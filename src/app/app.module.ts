@@ -27,6 +27,7 @@ import { ChatBottomComponent } from './components/chat-bottom/chat-bottom.compon
 import { FormsModule } from '@angular/forms';
 import { DialogflowService } from './services/dialogflow.service';
 import { ChatItemComponent } from './components/chat-item/chat-item.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -43,8 +44,10 @@ import { ChatItemComponent } from './components/chat-item/chat-item.component';
     ChatBodyComponent,
     ChatBottomComponent,
     ChatItemComponent,
+    
   ],
   imports: [
+    MatButtonModule,
     FormsModule,
     NgsRevealModule,
     MatBottomSheetModule,
@@ -59,6 +62,7 @@ import { ChatItemComponent } from './components/chat-item/chat-item.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    
   ],
   entryComponents:[ OptionsComponent ],
   providers: [DialogflowService],

@@ -14,7 +14,7 @@ export class DialogflowService {
   constructor(private http: HttpClient) { }
 
   public getResponse(query: string) {
-    console.log(this.getHeaders());
+
     let data = {
       query: query,
       lang: 'en',

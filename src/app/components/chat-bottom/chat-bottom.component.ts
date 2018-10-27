@@ -8,7 +8,7 @@ import { DialogflowService } from '../../services/dialogflow.service'
 })
 export class ChatBottomComponent implements OnInit {
 
-  constructor(private dialogFlowService : DialogflowService) { }
+  constructor() { }
 
 
   @Input('message')
@@ -21,15 +21,7 @@ export class ChatBottomComponent implements OnInit {
   }
 
 
-  public sendMessage(): void {
-    this.messages.push(this.message);
 
-    this.dialogFlowService.getResponse(this.message.content).subscribe(res => {
-      console.log(res);
-      this.messages.push(
-        new Message(res.result.fulfillment.speech)
-      );
-    });
 
 
   }
