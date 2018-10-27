@@ -21,6 +21,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { OptionsComponent } from './extras/options/options.component';
 import { NgsRevealModule } from 'ngx-scrollreveal';
+import { ChatMainComponent } from './components/chat-main/chat-main.component';
+import { ChatBodyComponent } from './pages/chat/chat-body/chat-body.component';
+import { ChatBottomComponent } from './components/chat-bottom/chat-bottom.component';
+import { FormsModule } from '@angular/forms';
+import { DialogflowService } from './services/dialogflow.service';
+import { ChatItemComponent } from './components/chat-item/chat-item.component';
 
 @NgModule({
   declarations: [
@@ -32,9 +38,14 @@ import { NgsRevealModule } from 'ngx-scrollreveal';
     LandingMunComponent,
     LandingToolkitComponent,
     FooterComponent,
-    OptionsComponent
+    OptionsComponent,
+    ChatMainComponent,
+    ChatBodyComponent,
+    ChatBottomComponent,
+    ChatItemComponent,
   ],
   imports: [
+    FormsModule,
     NgsRevealModule,
     MatBottomSheetModule,
     MatCardModule,
@@ -50,7 +61,7 @@ import { NgsRevealModule } from 'ngx-scrollreveal';
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
   entryComponents:[ OptionsComponent ],
-  providers: [],
+  providers: [DialogflowService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

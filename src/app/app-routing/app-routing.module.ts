@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './../pages/landing/landing.component'
 import { LandingContainerComponent } from './../components/landing-container/landing-container.component'
-
+import {ChatBodyComponent} from './../pages/chat/chat-body/chat-body.component'
 
 
 
@@ -14,7 +14,10 @@ const routes: Routes = [
     // children:[
     //   { path: '', component: LandingContainerComponent }
     // ]
-  },
+  },{
+    path: 'chat',
+    component: ChatBodyComponent
+  }
 ];
 
 
@@ -27,5 +30,6 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [
   LandingComponent,
-  LandingContainerComponent
+  LandingContainerComponent,
+  ChatBodyComponent
 ]
